@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>using for loop</title>
+</head>
+<body>
+<script>
+	var sm=[
+      {
+      	'name':'Arun',
+        'rollno':'100',
+	    'branch':'ece',
+	    'college':'acet'
+      },
+      {
+      	'name':'esha',
+      	'rollno':'324',
+	    'branch':'eee',
+	    'college':'aec'
+      },
+      {'name':'Ajadh',
+      	'rollno':'241',
+	    'branch':'ece',
+	    'college':'acet'
+      }
+      	]
+document.write(sm.length+"<br>");
+//    for( var i=0 ;i<sm.length; i++)
+//      { 
+
+
+//      	document.write( sm[i].name+"<br>");
+//      	document.write( sm[i].rollno+"<br>");
+// document.write( sm[i].branch+"<br>");
+// }
+for(var i=0;i<sm.length;i++)
+{
+	document.write(i+1+" .",sm[i].name+" ,",sm[i].rollno+" ,",sm[i].branch+" ,",sm[i].college +"<br>")
+}
+
+</script>
+</body>
+</html>

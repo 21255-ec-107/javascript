@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>tabletask2</title>
+</head>
+<body>
+	<table border>
+		<tr>
+			<td>coursename</td>
+			<td>course number</td>
+			<td>course fee</td>
+			<td>place</td>
+		</tr>
+			<tbody id="tbodyid"></tbody>
+	</table>
+
+	<script type="text/javascript">
+		var s=[
+		{'course':'html',
+		'coursenum':'76348',
+	     'coursefee':'368',
+	     'place':'dwp'
+		},
+		{'course':'css',
+		'coursenum':'87733',
+	     'coursefee':'218',
+	     'place':'dwp'
+		},
+		{'course':'javascript',
+		'coursenum':'77323',
+	     'coursefee':'313',
+	     'place':'dwp'
+		}
+]
+		
+
+for ( i=0;i<s.length;i++){
+      let tr=document.createElement('tr');
+      let td1=document.createElement('td');
+      let td2=document.createElement('td');
+      let td3=document.createElement('td');
+      let td4=document.createElement('td');
+      td1.innerText =s[i].course
+      td2.innerText =s[i].coursenum
+      td3.innerText =s[i].coursefee
+      td4.innerText =s[i].place
+      tr.append(td1)
+      tr.append(td2)
+      tr.append(td3)
+      tr.append(td4)
+      document.getElementById('tbodyid').append(tr);
+
+
+
+    }
+
+
+
+	</script>
+</body>
+</html>
